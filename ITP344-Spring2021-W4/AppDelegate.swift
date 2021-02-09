@@ -7,6 +7,7 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+@_exported import SnapKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
