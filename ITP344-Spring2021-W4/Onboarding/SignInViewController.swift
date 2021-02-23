@@ -101,6 +101,7 @@ class SignInViewController: BaseViewController {
             make.bottomMargin.equalToSuperview().offset(-10)
         }
         stackView.setCustomSpacing(50, after: attributedTitleLabel)
+        stackView.setCustomSpacing(20, after: pwTextField)
         stackView.setCustomSpacing(0, after: createAccountButton)
     }
 
@@ -109,7 +110,21 @@ class SignInViewController: BaseViewController {
 extension SignInViewController {
 
     @objc func forgotPWAction() {
-
+        let alert = UIAlertController(title: "Forgot Password", message: "Receive a password recovery email", preferredStyle: .alert)
+        alert.addTextField { (tf) in
+            tf.placeholder = "Email Address"
+            tf.autocorrectionType = .no
+        }
+        let submitAction = UIAlertAction(title: "Recover Password", style: .default) { (action) in
+            if let tfs = alert.textFields {
+                let email = tfs[0].text ?? ""
+                // Use Firebase to send forgot password email
+                // Display loading indicator
+                // Dismiss the loading indicator after Firebase confirms the email has been sent
+            }
+        }
+        alert.addAction(submitAction)
+        present(alert, animated: true, completion: nil)
     }
 
     @objc func signInAction() {
@@ -117,7 +132,7 @@ extension SignInViewController {
     }
 
     @objc func createAccountAction() {
-
+        present(SignUpViewController(), animated: true, completion: nil)
     }
 
 }

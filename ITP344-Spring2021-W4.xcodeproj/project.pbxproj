@@ -17,6 +17,7 @@
 		D55ABD9C25D1EF0400131E1F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ABD9B25D1EF0400131E1F /* SignInViewController.swift */; };
 		D55ABDA025D2047100131E1F /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ABD9F25D2047100131E1F /* UIExtensions.swift */; };
 		D55ABDA325D2284000131E1F /* PrioritiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ABDA225D2284000131E1F /* PrioritiesViewController.swift */; };
+		D5DCC35125E48F85009500E6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCC35025E48F85009500E6 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		D55ABD9B25D1EF0400131E1F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		D55ABD9F25D2047100131E1F /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		D55ABDA225D2284000131E1F /* PrioritiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrioritiesViewController.swift; sourceTree = "<group>"; };
+		D5DCC35025E48F85009500E6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F9C13A3F3E825ECB20D380BC /* Pods-ITP344-Spring2021-W4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITP344-Spring2021-W4.debug.xcconfig"; path = "Target Support Files/Pods-ITP344-Spring2021-W4/Pods-ITP344-Spring2021-W4.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				D55ABD9B25D1EF0400131E1F /* SignInViewController.swift */,
+				D5DCC35025E48F85009500E6 /* SignUpViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			files = (
 				D55ABD9825D1EE1000131E1F /* BaseViewController.swift in Sources */,
 				D5170F9725C8F8A100AAFD67 /* ViewController.swift in Sources */,
+				D5DCC35125E48F85009500E6 /* SignUpViewController.swift in Sources */,
 				D5170F9325C8F8A100AAFD67 /* AppDelegate.swift in Sources */,
 				D55ABDA025D2047100131E1F /* UIExtensions.swift in Sources */,
 				D55ABD9C25D1EF0400131E1F /* SignInViewController.swift in Sources */,
