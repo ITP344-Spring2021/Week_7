@@ -1,7 +1,5 @@
-# ITP344X Week 3
+# ITP344X Week 6
 ## Topics:
-- Programmatic UI continued
-- SnapKit
-- IQKeyboardManager
+- Firebase Integration
 ## Recording:
-- https://www.youtube.com/watch?v=eFe182B7AQM
+- 
