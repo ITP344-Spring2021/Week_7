@@ -6,6 +6,9 @@ target 'ITP344-Spring2021-W4' do
   use_frameworks!
   pod 'SnapKit', '~> 5.0.0’
   pod 'IQKeyboardManagerSwift'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
   # Pods for ITP344-Spring2021-W4
 
 end

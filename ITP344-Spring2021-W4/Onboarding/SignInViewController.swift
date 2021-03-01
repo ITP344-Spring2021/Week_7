@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignInViewController: BaseViewController {
 
@@ -29,6 +30,7 @@ class SignInViewController: BaseViewController {
         tf.borderStyle = .roundedRect
         tf.placeholder = "Email"
         tf.autocorrectionType = .no
+        tf.autocapitalizationType = .none
         tf.keyboardType = .emailAddress
         return tf
     }()
@@ -114,10 +116,19 @@ extension SignInViewController {
         alert.addTextField { (tf) in
             tf.placeholder = "Email Address"
             tf.autocorrectionType = .no
+            tf.keyboardType = .emailAddress
         }
-        let submitAction = UIAlertAction(title: "Recover Password", style: .default) { (action) in
+
+        let submitAction = UIAlertAction(title: "Recover Password", style: .default) { (_) in
             if let tfs = alert.textFields {
-                let email = tfs[0].text ?? ""
+                guard let email = tfs.first?.text else { return }
+                Auth.auth().sendPasswordReset(withEmail: email) { (error) in
+                    if let error = error {
+                        print(error.localizedDescription)
+                        return
+                    }
+                    print("Password reset email sent!")
+                }
                 // Use Firebase to send forgot password email
                 // Display loading indicator
                 // Dismiss the loading indicator after Firebase confirms the email has been sent
@@ -128,7 +139,22 @@ extension SignInViewController {
     }
 
     @objc func signInAction() {
-        UIApplication.shared.windows.first?.rootViewController = PrioritiesViewController()
+        guard let email = emailTextField.text else { return }
+        guard let pw = pwTextField.text else { return }
+        let spinner = SpinnerViewController()
+        present(spinner, animated: true, completion: nil)
+        // Manual delay for testing
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            Auth.auth().signIn(withEmail: email, password: pw) { (result, error) in
+                spinner.dismiss(animated: true, completion: nil)
+                if let error = error {
+                    print(error.localizedDescription)
+                    return
+                }
+                UIApplication.shared.windows.first?.rootViewController = PrioritiesViewController()
+            }
+        }
+        print("adasdasdadas")
     }
 
     @objc func createAccountAction() {

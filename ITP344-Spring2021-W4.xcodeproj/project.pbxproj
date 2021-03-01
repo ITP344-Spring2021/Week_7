@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A0A202AA145B5E45C7E05AE8 /* Pods_ITP344_Spring2021_W4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F7F040A0EDBB5DC7011BB6 /* Pods_ITP344_Spring2021_W4.framework */; };
 		D5170F9325C8F8A100AAFD67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5170F9225C8F8A100AAFD67 /* AppDelegate.swift */; };
 		D5170F9525C8F8A100AAFD67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5170F9425C8F8A100AAFD67 /* SceneDelegate.swift */; };
 		D5170F9725C8F8A100AAFD67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5170F9625C8F8A100AAFD67 /* ViewController.swift */; };
@@ -18,11 +17,11 @@
 		D55ABDA025D2047100131E1F /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ABD9F25D2047100131E1F /* UIExtensions.swift */; };
 		D55ABDA325D2284000131E1F /* PrioritiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ABDA225D2284000131E1F /* PrioritiesViewController.swift */; };
 		D5DCC35125E48F85009500E6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCC35025E48F85009500E6 /* SignUpViewController.swift */; };
+		D5DCC35925E4B10C009500E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5DCC35825E4B10C009500E6 /* GoogleService-Info.plist */; };
+		D5DCC38125E4C02E009500E6 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCC38025E4C02E009500E6 /* SpinnerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		32F7F040A0EDBB5DC7011BB6 /* Pods_ITP344_Spring2021_W4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ITP344_Spring2021_W4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		92D52D933315DB1E53DEA20E /* Pods-ITP344-Spring2021-W4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITP344-Spring2021-W4.release.xcconfig"; path = "Target Support Files/Pods-ITP344-Spring2021-W4/Pods-ITP344-Spring2021-W4.release.xcconfig"; sourceTree = "<group>"; };
 		D5170F8F25C8F8A100AAFD67 /* ITP344-Spring2021-W4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITP344-Spring2021-W4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5170F9225C8F8A100AAFD67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5170F9425C8F8A100AAFD67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +34,8 @@
 		D55ABD9F25D2047100131E1F /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		D55ABDA225D2284000131E1F /* PrioritiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrioritiesViewController.swift; sourceTree = "<group>"; };
 		D5DCC35025E48F85009500E6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		F9C13A3F3E825ECB20D380BC /* Pods-ITP344-Spring2021-W4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITP344-Spring2021-W4.debug.xcconfig"; path = "Target Support Files/Pods-ITP344-Spring2021-W4/Pods-ITP344-Spring2021-W4.debug.xcconfig"; sourceTree = "<group>"; };
+		D5DCC35825E4B10C009500E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5DCC38025E4C02E009500E6 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0A202AA145B5E45C7E05AE8 /* Pods_ITP344_Spring2021_W4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,27 +52,17 @@
 		7EE5B5EE6558834AB8CF9C17 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F9C13A3F3E825ECB20D380BC /* Pods-ITP344-Spring2021-W4.debug.xcconfig */,
-				92D52D933315DB1E53DEA20E /* Pods-ITP344-Spring2021-W4.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		84E68F0CBAA21894E1EE37DE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				32F7F040A0EDBB5DC7011BB6 /* Pods_ITP344_Spring2021_W4.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D5170F8625C8F8A100AAFD67 = {
 			isa = PBXGroup;
 			children = (
+				D5DCC35825E4B10C009500E6 /* GoogleService-Info.plist */,
 				D5170F9125C8F8A100AAFD67 /* ITP344-Spring2021-W4 */,
 				D5170F9025C8F8A100AAFD67 /* Products */,
 				7EE5B5EE6558834AB8CF9C17 /* Pods */,
-				84E68F0CBAA21894E1EE37DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				D55ABD9F25D2047100131E1F /* UIExtensions.swift */,
+				D5DCC38025E4C02E009500E6 /* SpinnerViewController.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -126,11 +116,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5170FA325C8F8A300AAFD67 /* Build configuration list for PBXNativeTarget "ITP344-Spring2021-W4" */;
 			buildPhases = (
-				76330FD7DCF60A3D4030C07C /* [CP] Check Pods Manifest.lock */,
 				D5170F8B25C8F8A100AAFD67 /* Sources */,
 				D5170F8C25C8F8A100AAFD67 /* Frameworks */,
 				D5170F8D25C8F8A100AAFD67 /* Resources */,
-				A20FBF0E63137A9465AFDB79 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,52 +168,11 @@
 			files = (
 				D5170F9F25C8F8A300AAFD67 /* LaunchScreen.storyboard in Resources */,
 				D5170F9C25C8F8A300AAFD67 /* Assets.xcassets in Resources */,
+				D5DCC35925E4B10C009500E6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		76330FD7DCF60A3D4030C07C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ITP344-Spring2021-W4-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A20FBF0E63137A9465AFDB79 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ITP344-Spring2021-W4/Pods-ITP344-Spring2021-W4-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ITP344-Spring2021-W4/Pods-ITP344-Spring2021-W4-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ITP344-Spring2021-W4/Pods-ITP344-Spring2021-W4-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D5170F8B25C8F8A100AAFD67 /* Sources */ = {
@@ -239,6 +186,7 @@
 				D55ABDA025D2047100131E1F /* UIExtensions.swift in Sources */,
 				D55ABD9C25D1EF0400131E1F /* SignInViewController.swift in Sources */,
 				D55ABDA325D2284000131E1F /* PrioritiesViewController.swift in Sources */,
+				D5DCC38125E4C02E009500E6 /* SpinnerViewController.swift in Sources */,
 				D5170F9525C8F8A100AAFD67 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,7 +323,6 @@
 		};
 		D5170FA425C8F8A300AAFD67 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9C13A3F3E825ECB20D380BC /* Pods-ITP344-Spring2021-W4.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -386,7 +333,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.boyuanx.ITP344-Spring2021-W4";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boyuanx.ITP344-Spring2021";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -395,7 +342,6 @@
 		};
 		D5170FA525C8F8A300AAFD67 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92D52D933315DB1E53DEA20E /* Pods-ITP344-Spring2021-W4.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -406,7 +352,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.boyuanx.ITP344-Spring2021-W4";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boyuanx.ITP344-Spring2021";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

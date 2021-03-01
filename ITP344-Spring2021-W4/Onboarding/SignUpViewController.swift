@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignUpViewController: BaseViewController {
 
@@ -29,6 +30,7 @@ class SignUpViewController: BaseViewController {
         tf.borderStyle = .roundedRect
         tf.placeholder = "Email"
         tf.autocorrectionType = .no
+        tf.autocapitalizationType = .none
         tf.keyboardType = .emailAddress
         return tf
     }()
@@ -99,7 +101,19 @@ class SignUpViewController: BaseViewController {
 extension SignUpViewController {
     
     @objc func signUpAction() {
-        
+        // 1. Check if two password entries are the same
+        guard let email = emailTextField.text else { return }
+        guard let pw = pwTextField.text else { return }
+        guard let confPw = confPwTextField.text else { return }
+        guard pw == confPw else { return }
+        // 2. Sign up thru Firebase
+        Auth.auth().createUser(withEmail: email, password: pw) { (result, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            // User is already signed in
+        }
     }
     
 }
