@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAC25F96D09EFAE6949EC580 /* Pods_ITP344_Spring2021_W4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC588F75E4DCCF01DBC12229 /* Pods_ITP344_Spring2021_W4.framework */; };
 		D5170F9325C8F8A100AAFD67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5170F9225C8F8A100AAFD67 /* AppDelegate.swift */; };
 		D5170F9525C8F8A100AAFD67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5170F9425C8F8A100AAFD67 /* SceneDelegate.swift */; };
 		D5170F9725C8F8A100AAFD67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5170F9625C8F8A100AAFD67 /* ViewController.swift */; };
@@ -19,9 +20,13 @@
 		D5DCC35125E48F85009500E6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCC35025E48F85009500E6 /* SignUpViewController.swift */; };
 		D5DCC35925E4B10C009500E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5DCC35825E4B10C009500E6 /* GoogleService-Info.plist */; };
 		D5DCC38125E4C02E009500E6 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCC38025E4C02E009500E6 /* SpinnerViewController.swift */; };
+		D5EED21C25EF4B010043F945 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EED21B25EF4B010043F945 /* CustomTabBarController.swift */; };
+		D5EED21F25EF4CF80043F945 /* P2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EED21E25EF4CF80043F945 /* P2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC588F75E4DCCF01DBC12229 /* Pods_ITP344_Spring2021_W4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ITP344_Spring2021_W4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF7F22E5FBC228C7EA80941 /* Pods-ITP344-Spring2021-W4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITP344-Spring2021-W4.release.xcconfig"; path = "Target Support Files/Pods-ITP344-Spring2021-W4/Pods-ITP344-Spring2021-W4.release.xcconfig"; sourceTree = "<group>"; };
 		D5170F8F25C8F8A100AAFD67 /* ITP344-Spring2021-W4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITP344-Spring2021-W4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5170F9225C8F8A100AAFD67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5170F9425C8F8A100AAFD67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		D5DCC35025E48F85009500E6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D5DCC35825E4B10C009500E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5DCC38025E4C02E009500E6 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		D5EED21B25EF4B010043F945 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		D5EED21E25EF4CF80043F945 /* P2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2ViewController.swift; sourceTree = "<group>"; };
+		D694B3B19C23E32CAA93CB2A /* Pods-ITP344-Spring2021-W4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITP344-Spring2021-W4.debug.xcconfig"; path = "Target Support Files/Pods-ITP344-Spring2021-W4/Pods-ITP344-Spring2021-W4.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC25F96D09EFAE6949EC580 /* Pods_ITP344_Spring2021_W4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +61,18 @@
 		7EE5B5EE6558834AB8CF9C17 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				D694B3B19C23E32CAA93CB2A /* Pods-ITP344-Spring2021-W4.debug.xcconfig */,
+				CFF7F22E5FBC228C7EA80941 /* Pods-ITP344-Spring2021-W4.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB917835DA65C04244541604 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC588F75E4DCCF01DBC12229 /* Pods_ITP344_Spring2021_W4.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D5170F8625C8F8A100AAFD67 = {
@@ -63,6 +82,7 @@
 				D5170F9125C8F8A100AAFD67 /* ITP344-Spring2021-W4 */,
 				D5170F9025C8F8A100AAFD67 /* Products */,
 				7EE5B5EE6558834AB8CF9C17 /* Pods */,
+				CB917835DA65C04244541604 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +107,8 @@
 				D5170F9B25C8F8A300AAFD67 /* Assets.xcassets */,
 				D5170F9D25C8F8A300AAFD67 /* LaunchScreen.storyboard */,
 				D5170FA025C8F8A300AAFD67 /* Info.plist */,
+				D5EED21B25EF4B010043F945 /* CustomTabBarController.swift */,
+				D5EED21E25EF4CF80043F945 /* P2ViewController.swift */,
 			);
 			path = "ITP344-Spring2021-W4";
 			sourceTree = "<group>";
@@ -116,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5170FA325C8F8A300AAFD67 /* Build configuration list for PBXNativeTarget "ITP344-Spring2021-W4" */;
 			buildPhases = (
+				FBEC2CDCEA709495248EEA5F /* [CP] Check Pods Manifest.lock */,
 				D5170F8B25C8F8A100AAFD67 /* Sources */,
 				D5170F8C25C8F8A100AAFD67 /* Frameworks */,
 				D5170F8D25C8F8A100AAFD67 /* Resources */,
+				A5B226CBF2264FF167ACDFB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +198,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A5B226CBF2264FF167ACDFB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ITP344-Spring2021-W4/Pods-ITP344-Spring2021-W4-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ITP344-Spring2021-W4/Pods-ITP344-Spring2021-W4-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ITP344-Spring2021-W4/Pods-ITP344-Spring2021-W4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBEC2CDCEA709495248EEA5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ITP344-Spring2021-W4-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5170F8B25C8F8A100AAFD67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -181,6 +247,7 @@
 			files = (
 				D55ABD9825D1EE1000131E1F /* BaseViewController.swift in Sources */,
 				D5170F9725C8F8A100AAFD67 /* ViewController.swift in Sources */,
+				D5EED21C25EF4B010043F945 /* CustomTabBarController.swift in Sources */,
 				D5DCC35125E48F85009500E6 /* SignUpViewController.swift in Sources */,
 				D5170F9325C8F8A100AAFD67 /* AppDelegate.swift in Sources */,
 				D55ABDA025D2047100131E1F /* UIExtensions.swift in Sources */,
@@ -188,6 +255,7 @@
 				D55ABDA325D2284000131E1F /* PrioritiesViewController.swift in Sources */,
 				D5DCC38125E4C02E009500E6 /* SpinnerViewController.swift in Sources */,
 				D5170F9525C8F8A100AAFD67 /* SceneDelegate.swift in Sources */,
+				D5EED21F25EF4CF80043F945 /* P2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +391,7 @@
 		};
 		D5170FA425C8F8A300AAFD67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D694B3B19C23E32CAA93CB2A /* Pods-ITP344-Spring2021-W4.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -342,6 +411,7 @@
 		};
 		D5170FA525C8F8A300AAFD67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFF7F22E5FBC228C7EA80941 /* Pods-ITP344-Spring2021-W4.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

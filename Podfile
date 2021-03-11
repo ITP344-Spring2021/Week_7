@@ -9,6 +9,7 @@ target 'ITP344-Spring2021-W4' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'UIWindowTransitions'
   # Pods for ITP344-Spring2021-W4
 
 end

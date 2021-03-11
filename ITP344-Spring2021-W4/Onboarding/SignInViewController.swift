@@ -7,12 +7,14 @@
 
 import UIKit
 import FirebaseAuth
+import UIWindowTransitions
 
 class SignInViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
+        title = "Sign In"
     }
 
     let attributedTitleLabel: UILabel = {
@@ -142,19 +144,25 @@ extension SignInViewController {
         guard let email = emailTextField.text else { return }
         guard let pw = pwTextField.text else { return }
         let spinner = SpinnerViewController()
-        present(spinner, animated: true, completion: nil)
-        // Manual delay for testing
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            Auth.auth().signIn(withEmail: email, password: pw) { (result, error) in
-                spinner.dismiss(animated: true, completion: nil)
-                if let error = error {
-                    print(error.localizedDescription)
-                    return
-                }
-                UIApplication.shared.windows.first?.rootViewController = PrioritiesViewController()
+//        present(spinner, animated: true, completion: nil)
+        Auth.auth().signIn(withEmail: email, password: pw) { (result, error) in
+//            spinner.dismiss(animated: true, completion: nil)
+            if let error = error {
+                print(error.localizedDescription)
+                return
             }
+            
         }
-        print("adasdasdadas")
+        let options = UIWindow.TransitionOptions()
+        options.background = .solidColor(.systemBackground)
+        options.style = .easeOut
+        options.duration = 0.5
+        UIApplication.shared.windows.first?.set(rootViewController: CustomTabBarController(), options: options, nil)
+//        UIApplication.shared.windows.first?.rootViewController = PrioritiesViewController()
+//        let priorities = PrioritiesViewController()
+//        priorities.modalPresentationStyle = .fullScreen
+//        present(priorities, animated: true, completion: nil)
+//        navigationController?.pushViewController(PrioritiesViewController(), animated: true)
     }
 
     @objc func createAccountAction() {
