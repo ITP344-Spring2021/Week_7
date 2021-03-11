@@ -1,5 +1,8 @@
-# ITP344X Week 6
+# ITP344X Week 7
 ## Topics:
-- Firebase Integration
+- Layout constraint priorities
+- Root view controllers
+- Navigation controllers
+- Tab bar controllers
 ## Recording:
-- 
+- https://www.youtube.com/watch?v=JWXfocg3c4M
